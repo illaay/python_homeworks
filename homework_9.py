@@ -36,20 +36,20 @@
 # Введите строку: Python programming
 # Результат: Python prgami
 
-user_str = input("Введите строку: ")
-index = 0
-deleted_chars = 0
-
-for char in user_str:
-    # решает проблему смещения индекса при изменении строки, которую обходит цикл
-    current_index = index - deleted_chars
-    # не нашел способы избавиться от конкатенации строк
-    # (помимо моментального print(char, end=""), но так не будет готовой измененной строки),
-    # поэтому уменьшил количество склеек
-    # (новая строка формируется только при нахождении дубликата)
-    if char in user_str[:current_index]:
-        user_str = user_str[:current_index] + user_str[current_index + 1:]
-        deleted_chars += 1
-    index += 1
-
-print(user_str)
+# user_str = input("Введите строку: ")
+# index = 0
+# deleted_chars = 0
+#
+# for char in user_str:
+#     # решает проблему смещения индекса при изменении строки, которую обходит цикл
+#     current_index = index - deleted_chars
+#     # не нашел способы избавиться от конкатенации строк
+#     # (помимо моментального print(char, end=""), но так не будет готовой измененной строки),
+#     # поэтому уменьшил количество склеек
+#     # (новая строка формируется только при нахождении дубликата)
+#     if char in user_str[:current_index]:
+#         user_str = user_str[:current_index] + user_str[current_index + 1:]
+#         deleted_chars += 1
+#     index += 1
+#
+# print(user_str)
