@@ -8,20 +8,27 @@
 
 # text_list = ["Hello", "Python Programming", "World", "Advanced Topics", "Simple"]
 #
-# del_strs_count = 0
-# for index in range(len(text_list)):
-#     current_index = index - del_strs_count
-#     if len(text_list[current_index].split()) > 1:
-#         del text_list[current_index]
-#         del_strs_count += 1
-#         continue
-#     text_list[current_index] = text_list[current_index].lower()
+# # прошлый (некрасивый) вариант
+# # del_strs_count = 0
+# # for index in range(len(text_list)):
+# #     current_index = index - del_strs_count
+# #     if len(text_list[current_index].split()) > 1:
+# #         del text_list[current_index]
+# #         del_strs_count += 1
+# #         continue
+# #     text_list[current_index] = text_list[current_index].lower()
+#
+# for index in range(len(text_list) - 1, -1, -1):
+#     if len(text_list[index].split()) > 1:
+#         del text_list[index]
+#     else:
+#         text_list[index] = text_list[index].lower()
 #
 # print(text_list)
 
 
 
-# Обновление цен товаров
+# 2. Обновление цен товаров
 # Дан список товаров с ценами. Программа должна применить скидку к каждому товару и
 # добавить в список элемент с новой ценой. В конце вывести таблицу с новой ценой.
 # Данные:
