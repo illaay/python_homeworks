@@ -7,7 +7,19 @@
 # Числа, встречающиеся более одного раза: [8, 7, 4, 3]
 
 # numbers = [4, 7, 3, 7, 8, 3, 4, 2, 7, 3, 8, 4]
-# print(f"Числа, встречающиеся более одного раза: {sorted(set(numbers), reverse=True)}")
+#
+# # прошлый (неправильный) вариант
+# # print(f"Числа, встречающиеся более одного раза: {sorted(set(numbers), reverse=True)}")
+#
+# seen_numbers = set()
+# repeating_numbers = set()
+# for number in numbers:
+#     if number in seen_numbers:
+#         repeating_numbers.add(number)
+#     else:
+#         seen_numbers.add(number)
+#
+# print(f"Числа, встречающиеся более одного раза: {sorted(repeating_numbers, reverse=True)}")
 
 
 
